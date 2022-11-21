@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Plantilla curso con Grid Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud2017.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="titulo">C R U D con Array de objetos -- curso 2021/2022</h1>
+        </header>
+ 
+        <nav class="columna2">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Creación del Horario</li>
+                <li>Visualizar Horario</li>
+            </ul>
+
+        </nav>
+
+        <section class="columna1">
+            <article class="cajaarticulo">
+                
+                <span class="labeltitulo1">Profesor</span>
+                <div class="labelelemento1"><input type="text" id="cNombre" value="Fernando" /></div>
+
+                <span class="labeltitulo2">Asignatura</span>
+                <div class="labelelemento2"><input type="text" id="cAsignatura" value="DWEC" /></div>
+
+                <span class="labeltitulo3">Dia de la Semana</span>
+                <div class="labelelemento3">
+                    <select id="cDias">
+                        <option value="1">Lunes</>
+                        <option value="2">Martes</>
+                        <option value="3">Miercoles</>
+                        <option value="4">Jueves</>
+                        <option value="5">Viernes</>
+                    </select>
+                </div>
+
+                <span class="labeltitulo4">Hora :</span>
+                <div class="labelelemento4">
+
+                    <select id="cHora">
+                        <option value="1">8 h.</>
+                        <option value="2">9 h.</>
+                        <option value="3">10 h.</>
+                        <option value="4">11:30 h.</>
+                        <option value="5">12:13 h.</>
+                    </select>
+
+
+                    <div class="labeltitulo5"></div>
+                    <div class="labelelemento5"><input type="button" id="bGrabar" value="Grabar"
+                            onclick="guardaDatos()" /></div>
+            </article>
+            <article class="cajaarticulo,  ">
+                <table style="border: #c610e6 solid 2px; width: 100%">
+                    <tr style="border: #999999 solid 3px">
+                        <th>Horario
+                        <th>
+                        <th style="border: #009999 solid 3px">Lunes</th>
+                        <th style="border: #009999 solid 3px">Martes</th>
+                        <th style="border: #009999 solid 3px">Miercoles</th>
+                        <th style="border: #009999 solid 3px">Jueves</th>
+                        <th style="border: #009999 solid 3px">Viernes</th>
+                    </tr>
+                    <tr>
+                        <td style="border:  black solid 3px"> 8
+                        <td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                    </tr>
+                    <tr>
+                        <td style="border:  black solid 3px"> 9
+                        <td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                        <td style="border: #009999 solid 3px">---</td>
+                    </tr>
+                    <td style="border:  black solid 3px"> 10
+                    <td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    </tr>
+                    <td style="border:  black solid 3px"> 11:30
+                    <td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    </tr>
+                    <td style="border:  black solid 3px"> 12:30
+                    <td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    <td style="border: #009999 solid 3px">---</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <aside class="columna3">
+            <blockquote>C R U D</blockquote>
+            <blockquote>Create Read Udpate Delete</blockquote>
+        </aside>
+        <footer class="columna4">
+            CIFP Santa Catalina &copy; 2021-2022
+        </footer>
+
+
+    </div>
+
+    <script src="funciones.js" defer></script>
+</body>
+
+</html>
